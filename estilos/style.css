@@ -100,9 +100,14 @@ h2 {
   position: relative;
 }
 
+h3 {
+  color: var(--texto);
+}
+
 p {
   text-align: justify;
   line-height: 1.5rem;
+  color: var(--texto);
 }
 
 #ficha {
@@ -370,6 +375,7 @@ footer {
 
 footer p {
   text-align: center;
+  color: var(--texto-inverso);
 }
 
 footer a {

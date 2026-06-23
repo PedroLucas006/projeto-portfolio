@@ -15,6 +15,10 @@
   --fundo-card: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, html {
   width: 100vw;
   height: 100vh;
@@ -24,9 +28,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, Sans-Serif;
   background-color: var(--fundo-principal);
   line-height: 1.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding-top: 40px;
 }
 
 header {
@@ -34,13 +36,17 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
-menu {
+nav {
   padding-right: 10px;
 }
 
-menu > ul {
+nav > ul {
   list-style: none;
   display: flex;
   gap: 10px;
@@ -52,13 +58,13 @@ li {
   align-content: center;
 }
 
-menu a {
+nav a {
   padding: 10px 10px;
   color: white;
   border-radius: 5px;
 }
 
-menu a:hover {
+nav a:hover {
   background: var(--destaque-inverso);
   color: var(--destaque);
   transition: .5s;
@@ -140,16 +146,14 @@ p {
   border-radius: 5px;
   background-color: var(--fundo-card);
   padding: 20px;
- 
+ scroll-margin-top: 40px;
 }
-
 
 .video {
   margin: auto;
   position: relative;
   width: 100%;
   aspect-ratio: 16/9;
-
 }
 
 .video iframe {
@@ -169,6 +173,7 @@ p {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
+  scroll-margin-top: 40px;
 }
 
 #areas { 
@@ -239,6 +244,7 @@ p {
   border-radius: 5px;
   background-color: var(--fundo-card);
   padding: 20px;
+  scroll-margin-top: 40px;
 }
 
 #formacao span {
@@ -297,6 +303,7 @@ p.periodo {
   border-radius: 5px;
   background-color: var(--fundo-card);
   padding: 20px;
+  scroll-margin-top: 40px;
 }
 
 article#exemplares {
